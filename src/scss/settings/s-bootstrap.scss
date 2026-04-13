@@ -1,0 +1,69 @@
+@use "sass:map";
+
+$enable-important-utilities: false;
+$grid-gutter-width: 32px;
+$enable-reduced-motion: false;
+$enable-smooth-scroll: false;
+$enable-caret: false;
+$enable-transitions: false;
+$enable-gradients: false;
+$enable-rounded: false;
+$enable-dark-mode: false;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+  xxxl: 1920px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1460px,
+);
+
+$spacer: 8px;
+
+$spacers: ();
+$spacers: map.deep-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 1,
+    ),
+    2: (
+      $spacer * 2,
+    ),
+    3: (
+      $spacer * 3,
+    ),
+    4: (
+      $spacer * 4,
+    ),
+    5: (
+      $spacer * 5,
+    ),
+    6: (
+      $spacer * 6,
+    ),
+    7: (
+      $spacer * 7,
+    ),
+    8: (
+      $spacer * 8,
+    ),
+    9: (
+      $spacer * 9,
+    ),
+    10: (
+      $spacer * 10,
+    ),
+  ),
+  $spacers
+);
