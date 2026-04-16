@@ -1,2 +1,7 @@
 node_modules/
 build/
+
+# Share only project-level VS Code setup
+!.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
